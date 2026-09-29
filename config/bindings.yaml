@@ -1,0 +1,174 @@
+global:
+  laws: [template-fidelity, authorize-remote-writes, project-scope-only]
+okt:
+  persona: maes-hughes
+  skills: [pdca-cycle, okt-start-playbook]
+okt-audit:
+  persona: king-bradley
+  laws: [briggs-fortress-gate]
+  skills: [risk-driven-development, okt-audit-playbook]
+okt-config:
+  persona: maes-hughes
+  templates: [config-orientation]
+  skills: [markdown, okt-config-playbook]
+okt-help:
+  persona: maes-hughes
+  skills: [markdown, okt-help-playbook]
+okt-note-free:
+  persona: alphonse-elric
+  templates: [note-free]
+  skills: [note-capture, okt-note-free-playbook]
+okt-note-list:
+  persona: alphonse-elric
+  skills: [note-capture, okt-note-list-playbook]
+okt-note-recap:
+  persona: alphonse-elric
+  templates: [note-recap, note-standup-digest]
+  skills: [recap-timeline, standup-digest, okt-note-recap-playbook]
+okt-note-show:
+  persona: alphonse-elric
+  skills: [note-capture, okt-note-show-playbook]
+okt-pause:
+  persona: alphonse-elric
+  laws: [project-scope-only, no-praise-pad]
+  templates: [note-handoff]
+  skills: [handoff-synthesis, okt-pause-playbook]
+okt-plan-claim:
+  persona: roy-mustang
+  skills: [staged-delivery, okt-plan-claim-playbook]
+okt-plan-continue:
+  persona: roy-mustang
+  skills: [staged-delivery, okt-plan-continue-playbook]
+okt-plan-create:
+  persona: roy-mustang
+  skills: [staged-delivery, okt-plan-create-playbook]
+okt-plan-show:
+  persona: roy-mustang
+  skills: [staged-delivery, okt-plan-show-playbook]
+okt-project-continue:
+  persona: maes-hughes
+  skills: [pdca-cycle, okt-project-continue-playbook]
+okt-project-resume:
+  persona: maes-hughes
+  skills: [pdca-cycle, okt-project-resume-playbook]
+okt-run:
+  persona: roy-mustang
+  skills: [staged-delivery, dora-mindset, okt-run-playbook]
+okt-shape:
+  persona: roy-mustang
+  skills: [five-w-two-h, smart-goals, council-deliberation, okt-shape-playbook]
+okt-skill:
+  persona: maes-hughes
+  skills: [markdown, okt-skill-playbook]
+okt-start:
+  persona: maes-hughes
+  skills: [pdca-cycle, discovery, okt-start-playbook]
+okt-task-check:
+  persona: maes-hughes
+  laws: [equivalent-exchange-audit, regression-required]
+  templates: [comment-check-report]
+  skills: [regression-detection, coverage-analysis, okt-task-check-playbook]
+okt-task-commit:
+  persona: riza-hawkeye
+  laws: [conventional-commits, no-coauthored-by, link-task-comments]
+  skills: [conventional-commits-spec, okt-task-commit-playbook]
+okt-task-continue:
+  persona: edward-elric
+  skills: [implementation, okt-task-continue-playbook]
+okt-task-create:
+  persona: roy-mustang
+  laws: [invest-stories, outcome-over-output, non-functional-explicit]
+  templates:
+    - task-change-request
+    - comment-requirements
+    - comment-acceptance
+    - comment-smart-success
+    - comment-moscow
+    - comment-non-functional
+  skills: [user-story-writing, invest-stories, smart-goals, okt-task-create-playbook]
+okt-task-debrief:
+  persona: alphonse-elric
+  laws: [blameless-postmortem, no-praise-pad]
+  skills: [postmortem-authoring, okt-task-debrief-playbook]
+okt-task-decompose:
+  persona: roy-mustang
+  skills: [user-story-writing, okt-task-decompose-playbook]
+okt-task-design:
+  persona: edward-elric
+  skills: [solid-principles, okt-task-design-playbook]
+okt-task-document:
+  persona: alphonse-elric
+  laws: [blameless-postmortem]
+  skills: [documentation, architecture-mapping, okt-task-document-playbook]
+okt-task-estimate:
+  persona: roy-mustang
+  skills: [rice-scoring, okt-task-estimate-playbook]
+okt-task-imagine:
+  persona: pinako-rockbell
+  laws_disabled: [template-fidelity]
+  templates: [comment-5w2h, comment-smart-success]
+  skills: [discovery, lean-experimentation, okt-task-imagine-playbook]
+okt-task-implement:
+  persona: edward-elric
+  laws:
+    - transmutation-circle-required
+    - truth-cannot-be-hidden
+    - conventional-commits
+    - no-silent-behavior-changes
+  templates:
+    - pull-request
+    - comment-pre-mortem
+    - comment-rollback-plan
+    - comment-tests-passing-strict
+    - comment-risk-assessment
+  skills:
+    - implementation
+    - gate-of-truth-toll
+    - automail-fallback
+    - trunk-based-development
+    - continuous-integration
+    - okt-task-implement-playbook
+okt-task-prioritize:
+  persona: roy-mustang
+  templates: [comment-moscow, comment-rice-score]
+  skills: [moscow-prioritization, rice-scoring, okt-task-prioritize-playbook]
+okt-task-quality:
+  persona: maes-hughes
+  laws: [equivalent-exchange-audit]
+  templates: [comment-review-findings]
+  skills: [static-analysis-discipline, okt-task-quality-playbook]
+okt-task-refactor:
+  persona: edward-elric
+  laws: [truth-cannot-be-hidden, no-silent-behavior-changes]
+  templates: [comment-review-findings]
+  skills: [refactoring-catalog, okt-task-refactor-playbook]
+okt-task-requirements:
+  persona: roy-mustang
+  templates: [comment-requirements, comment-acceptance]
+  skills: [requirements-elicitation, non-functional-requirements, okt-task-requirements-playbook]
+okt-task-research:
+  persona: pinako-rockbell
+  laws_disabled: [template-fidelity]
+  skills: [discovery, okt-task-research-playbook]
+okt-task-resume:
+  persona: edward-elric
+  skills: [implementation, okt-task-resume-playbook]
+okt-task-review:
+  persona: olivier-armstrong
+  laws: [briggs-fortress-gate, equivalent-exchange-audit, dual-review-required]
+  templates: [comment-review-findings, comment-refactor-opportunities]
+  skills: [code-smells, refactoring-catalog, fagan-inspection, okt-task-review-playbook]
+okt-task-secure:
+  persona: olivier-armstrong
+  laws: [briggs-fortress-gate]
+  templates: [comment-review-findings]
+  skills: [security-review-lens, okt-task-secure-playbook]
+okt-task-self-review:
+  persona: edward-elric
+  laws: [no-silent-behavior-changes]
+  templates: [comment-peer-review-strict]
+  skills: [code-smells, okt-task-self-review-playbook]
+okt-task-validate:
+  persona: pinako-rockbell
+  laws_disabled: [template-fidelity]
+  skills: [lean-experimentation, okt-task-validate-playbook]
