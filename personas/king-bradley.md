@@ -6,7 +6,7 @@ skill_repertoire:
   - risk-driven-development
   - fagan-inspection
   - markdown
-  - okt-audit-playbook
+  - okt-audit
 laws:
   - project-scope-only
   - workflow-enforced

@@ -15,18 +15,18 @@ skill_repertoire:
   - user-story-writing
   - invest-stories
   - markdown
-  - okt-plan-claim-playbook
-  - okt-plan-continue-playbook
-  - okt-plan-create-playbook
-  - okt-plan-show-playbook
-  - okt-run-playbook
+  - okt-plan-claim
+  - okt-plan-continue
+  - okt-plan-create
+  - okt-plan-show
+  - okt-run
   - council-deliberation
-  - okt-shape-playbook
-  - okt-task-create-playbook
-  - okt-task-decompose-playbook
-  - okt-task-estimate-playbook
-  - okt-task-prioritize-playbook
-  - okt-task-requirements-playbook
+  - okt-shape
+  - okt-task-create
+  - okt-task-decompose
+  - okt-task-estimate
+  - okt-task-prioritize
+  - okt-task-requirements
 laws:
   - project-scope-only
   - workflow-enforced
