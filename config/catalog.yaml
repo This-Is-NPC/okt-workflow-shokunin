@@ -92,6 +92,7 @@ skills:
   - trunk-based-development
   - user-story-writing
 laws:
+  - attack-the-premise
   - 5w2h-elicitation
   - accept-yellow
   - acceptance-criteria-required
@@ -113,6 +114,7 @@ laws:
   - decision-record-on-gap
   - design-recorded
   - design-recorded-check
+  - design-principles
   - dual-peer-review
   - dual-review-required
   - dual-signal-required
