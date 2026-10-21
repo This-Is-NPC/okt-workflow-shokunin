@@ -53,6 +53,10 @@
       guards:
         - type: comments_tagged
           count: 1
+          tag: scope
+          hint: Declare the task's module scope before development (okt template show comment-scope).
+        - type: comments_tagged
+          count: 1
           tag: self-branch
           hint: ${{intl:guard.common.dev.comments_tagged.self_branch.hint}}
         - type: comments_tagged
@@ -87,6 +91,10 @@
       to: 5
       guards:
         - type: comments_tagged
+          count: 1
+          tag: boundary
+          hint: Post input-domain analysis before documentation (okt template show comment-boundary).
+        - type: comments_tagged
           count: 2
           tag: peer-review
           hint: ${{intl:guard.shokunin.docs.comments_tagged.peer_review.hint}}
@@ -104,6 +112,11 @@
     - {from: 4, to: 3}
     - {from: 5, to: 4}
     - {from: 6, to: 4}
+  plans:
+    start:
+      guards:
+        - {type: plan_comments_tagged, tag: decomposition, hint: "Post the plan's module map first (okt template show comment-decomposition)."}
+        - {type: plan_comments_tagged, tag: council, hint: "Post council decisions first (okt template show comment-council)."}
   operations:
     archive:
       guards:

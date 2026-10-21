@@ -2,6 +2,7 @@ global:
   laws: [template-fidelity, authorize-remote-writes, project-scope-only]
 okt-audit:
   persona: king-bradley
+  templates: [comment-audit]
   laws: [briggs-fortress-gate]
   skills: [risk-driven-development, okt-audit]
 okt-config:
@@ -38,6 +39,7 @@ okt-plan-continue:
   skills: [staged-delivery, okt-plan-continue]
 okt-plan-create:
   persona: roy-mustang
+  templates: [plan-goal, comment-council, comment-decomposition]
   skills: [staged-delivery, okt-plan-create]
 okt-plan-show:
   persona: roy-mustang
@@ -56,6 +58,7 @@ okt-run:
   skills: [staged-delivery, dora-mindset, okt-run]
 okt-shape:
   persona: roy-mustang
+  templates: [plan-goal, comment-council, comment-decomposition]
   skills: [five-w-two-h, smart-goals, council-deliberation, okt-shape]
 okt-skill:
   persona: maes-hughes
@@ -85,6 +88,7 @@ okt-task-create:
     - comment-smart-success
     - comment-moscow
     - comment-non-functional
+    - comment-scope
   skills: [user-story-writing, invest-stories, smart-goals, okt-task-create]
 okt-task-debrief:
   persona: alphonse-elric
@@ -156,7 +160,7 @@ okt-task-resume:
 okt-task-review:
   persona: olivier-armstrong
   laws: [briggs-fortress-gate, equivalent-exchange-audit, dual-review-required]
-  templates: [comment-review-findings, comment-refactor-opportunities]
+  templates: [comment-review-findings, comment-refactor-opportunities, comment-boundary]
   skills: [code-smells, refactoring-catalog, fagan-inspection, okt-task-review]
 okt-task-secure:
   persona: olivier-armstrong
