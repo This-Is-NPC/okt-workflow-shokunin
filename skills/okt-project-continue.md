@@ -8,6 +8,7 @@ command:
   name: okt-project-continue
   next:
     - name: okt-task-continue
+      when: The handoff names an open task
       context: bare
 ---
 Warm-resume the current project from the last session. Assume continuity — you are picking up a thread, not deriving the project from scratch.

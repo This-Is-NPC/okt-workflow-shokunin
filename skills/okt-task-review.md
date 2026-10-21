@@ -8,18 +8,12 @@ command:
   name: okt-task-review
   next:
     - name: okt-task-implement
+      when: Findings need fixes
       context: bare
 ---
-Walk the diff with the loaded lens. This is a read-only review — you surface findings, you never edit files or commit.
+Review the diff. Read-only: post findings; do not edit or commit.
 
-## Read every hunk first
-
-Run `git diff <base>..HEAD` (default base `main`; use staged when explicit) and read every hunk before writing findings.
-
-## Order the pass and cite methodology
-
-Order the pass correctness → security → smells → refactor opportunities → scalability/performance. Cite methodology by name when applicable — `Extract Function — Fowler`, `Feature Envy — Fowler/Beck`, `Sprout Method — Feathers`, `OCP — Martin`. Tag every finding by severity (`error` / `warning` / `info`).
-
-## Post the filled scaffolds
-
-Call `okt template show comment-review-findings` and `okt template show comment-refactor-opportunities` for the scaffolds, then persist each filled task comment with `okt comment add` (`scope=task`, the reviewed `task_id`, `author_type=agent`). Read-only means no file edits and no `git commit`; writing review comments is the durable artifact.
+1. **Read every hunk.** Run `git diff <base>..HEAD` (default `main`; use staged only when explicit).
+2. **Pass in order.** Review correctness, security, smells, refactoring opportunities, and scalability or performance. Name an applicable method and tag every finding `error`, `warning`, or `info`.
+3. **Probe boundaries.** For every external input touched, derive valid, invalid, and edge equivalence classes. Record in `comment-boundary` whether each class is unrepresentable by type, rejected at parse, or covered by a test; an external-input error reaching an internal layer is blocking.
+4. **Post durable findings.** Fill and post `comment-review-findings`, `comment-refactor-opportunities` when needed, and the `#boundary` analysis. Do not make file edits or commits.

@@ -9,6 +9,7 @@ command:
   name: okt-task-research
   next:
     - name: okt-task-validate
+      when: The decision is recorded
       context: bare
 ---
 Investigate the problem space before any solution is committed. This pass is read-only — you map the terrain, you do not build on it yet.

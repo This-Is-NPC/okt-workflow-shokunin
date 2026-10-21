@@ -9,6 +9,7 @@ command:
   name: okt-task-requirements
   next:
     - name: okt-task-prioritize
+      when: The baseline is recorded
       context: bare
 ---
 Capture what the solution must satisfy. This is the requirements baseline the rest of the work is measured against.

@@ -8,8 +8,10 @@ command:
   name: okt-config
   next:
     - name: okt-help
+      when: The user needs the command map
       context: bare
     - name: okt-task-implement
+      when: A config change should ship as a task
       context: bare
 ---
 Orient the user on the active config layout so they can customize their omakiten environment.

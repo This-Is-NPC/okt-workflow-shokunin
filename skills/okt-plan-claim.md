@@ -9,6 +9,7 @@ command:
   name: okt-plan-claim
   next:
     - name: okt-task-continue
+      when: A task was claimed
       context: bare
 ---
 Reserve the next claimable task in the plan's active wave. This is the atomic commit step that turns a preview into ownership.

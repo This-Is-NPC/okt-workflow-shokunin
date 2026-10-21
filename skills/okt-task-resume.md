@@ -8,6 +8,7 @@ command:
   name: okt-task-resume
   next:
     - name: okt-task-implement
+      when: The next increment is clear
       context: bare
 ---
 Cold-start a task — assume no prior context exists in this session. Unlike a warm checkpoint read, you know nothing and must rebuild the full picture from the artifacts.

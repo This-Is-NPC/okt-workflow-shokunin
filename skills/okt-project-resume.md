@@ -8,6 +8,7 @@ command:
   name: okt-project-resume
   next:
     - name: okt-task-continue
+      when: The user picked a candidate
       context: bare
 ---
 Scan for the next work to pick up. This is the cold scan across the project, not a warm hand-back of a known thread.

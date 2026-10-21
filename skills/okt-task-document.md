@@ -1,6 +1,6 @@
 ---
 name: okt-task-document
-description: Survey project documentation for drift and propose updates.
+description: Bring user-facing documentation in line with a task's change.
 schema_version: 2
 role_affinity:
   - Scribe
@@ -8,15 +8,13 @@ role_affinity:
 command:
   name: okt-task-document
   next:
-    - name: okt-task-create
+    - name: okt-task-commit
       context: bare
+      when: Documentation is ready to commit
 ---
-Survey the project documentation for drift. This is a read-only audit — you list what is stale, you do not rewrite in place.
+Update documentation for what the task changed. Write documentation, not production code.
 
-## Survey the top-level docs
-
-Survey `.docs/internal/architecture.md`, `.docs/internal/requirements.md`, `README.md`, `CONTRIBUTING.md`, and other top-level docs.
-
-## List drift items
-
-List the drift items with file references and suggested wording — do not edit in place.
+1. **Read the change.** Read the task, its `#scope`, and `git diff main..HEAD` on the task branch.
+2. **Update user-facing pages.** Update `README.md`, `docs/`, and relevant top-level documentation for changed behavior, commands, settings, and errors. Derive facts and displayed output from code or a real run.
+3. **Commit documentation.** Use `docs(<scope>): …` on the task branch.
+4. **Record evidence.** Fill `comment-documentation` and post it as `#documentation`.

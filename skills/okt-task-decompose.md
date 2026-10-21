@@ -9,6 +9,7 @@ command:
   name: okt-task-decompose
   next:
     - name: okt-task-estimate
+      when: The breakdown is agreed
       context: bare
 ---
 Break a coarse task into right-sized increments. The aim is slices small enough to ship on their own, not a flat checklist.

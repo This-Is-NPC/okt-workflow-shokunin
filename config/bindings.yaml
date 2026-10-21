@@ -48,6 +48,9 @@ okt-project-continue:
 okt-project-resume:
   persona: maes-hughes
   skills: [pdca-cycle, okt-project-resume]
+okt-reflect:
+  persona: maes-hughes
+  skills: [pdca-cycle, okt-reflect]
 okt-run:
   persona: roy-mustang
   skills: [staged-delivery, dora-mindset, okt-run]

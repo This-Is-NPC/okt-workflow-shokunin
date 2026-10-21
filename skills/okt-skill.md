@@ -8,8 +8,10 @@ command:
   name: okt-skill
   next:
     - name: okt-task-commit
+      when: The user asked for the commit skill
       context: bare
     - name: okt-help
+      when: The user needs the command map
       context: bare
 ---
 Load a skill on demand, or browse the skill catalog. Resolve the slug from `--slug` or the first positional argument (e.g. `/okt-skill commit`).

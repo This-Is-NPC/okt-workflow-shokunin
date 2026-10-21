@@ -9,6 +9,7 @@ command:
   name: okt-task-debrief
   next:
     - name: okt-task-document
+      when: The learnings change documented behaviour
       context: bare
 ---
 Close the loop on completed work — capture what was learned, not what was done. The debrief makes the next task start smarter.

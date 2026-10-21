@@ -9,6 +9,7 @@ command:
   name: okt-task-refactor
   next:
     - name: okt-task-check
+      when: The transformation is applied
       context: bare
 ---
 Improve the structure of code without changing its behavior. One behavior-preserving transformation per pass — no feature work rides along.

@@ -8,8 +8,10 @@ command:
   name: okt-note-free
   next:
     - name: okt-note-list
+      when: The user wants to see existing notes
       context: bare
     - name: okt-note-recap
+      when: The user wants a recap of recent notes
       context: bare
 ---
 Capture a free-form knowledge note without ceremony. The note is persisted through the scope-aware `okt comment` surface.

@@ -9,6 +9,7 @@ command:
   name: okt-task-prioritize
   next:
     - name: okt-task-create
+      when: The ranking is recorded
       context: bare
 ---
 Rank the work against alternatives. The ordering must be auditable, not arbitrary.

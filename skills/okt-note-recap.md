@@ -9,6 +9,7 @@ command:
   name: okt-note-recap
   next:
     - name: okt-task-continue
+      when: The recap points at an open task
       context: bare
 ---
 Render a recap timeline of recent activity, scoped by the window argument and the active or explicitly selected project. The recap reads through `okt comment`; it is the artifact and is never persisted.

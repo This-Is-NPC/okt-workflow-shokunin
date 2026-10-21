@@ -8,6 +8,7 @@ command:
   name: okt-task-secure
   next:
     - name: okt-task-implement
+      when: Findings need fixes
       context: bare
 ---
 Walk the diff through a security lens. This pass is security-only and distinct from the general `okt-task-review` — and it is read-only, you never edit.

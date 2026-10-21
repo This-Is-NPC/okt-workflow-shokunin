@@ -9,8 +9,10 @@ command:
   name: okt-note-show
   next:
     - name: okt-note-list
+      when: The user wants other notes
       context: bare
     - name: okt-task-continue
+      when: The note points at an open task
       context: bare
 ---
 Read one note in full. The note is fetched from the `okt comment` surface; this command is read-only by design.

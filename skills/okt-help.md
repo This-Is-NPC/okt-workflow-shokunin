@@ -8,10 +8,13 @@ command:
   name: okt-help
   next:
     - name: okt-start
+      when: The user is ready to work
       context: bare
     - name: okt-config
+      when: The question is about configuration
       context: bare
     - name: okt-skill
+      when: The user wants to read a skill
       context: bare
 ---
 Orient the user on how omakiten works and help them organize their work — this is the tutorial, not a project action. Teach the surface in three layers.
